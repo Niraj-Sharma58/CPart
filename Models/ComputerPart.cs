@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace ComputerPart.Models
 {
-    public class ComputerPart
+    public class ComputerPartModel
     {
         public int Id{get; set;}
          

@@ -12,6 +12,6 @@ namespace ComputerPart.Data
         {
         }
 
-        public DbSet<ComputerPart.Models.ComputerPart> ComputerParts {get; set;}
+        public DbSet<ComputerPart.Models.ComputerPartModel> ComputerParts {get; set;}
     }
 }
