@@ -21,6 +21,7 @@
                 <th>Category</th>
                 <th>Price</th>
                 <th>Quantity</th>
+                <th>Actions</th>
                 <th></th>
             </tr>
         </thead>
@@ -33,7 +34,19 @@
                     <td>@obj.Category</td>
                     <td>@obj.Price</td>
                     <td>@obj.Quantity</td>
-                    
+                    <td>
+                        <a asp-action="Edit"
+                           asp-route-id="@obj.Id"
+                           class="btn btn-sm btn-warning">
+                            Edit
+                        </a>
+
+                        <a asp-action="Delete"
+                           asp-route-id="@obj.Id"
+                           class="btn btn-sm btn-danger">
+                            Delete
+                        </a>
+                    </td>
                         
                     
                 </tr>
